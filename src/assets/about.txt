@@ -1,0 +1,31 @@
+暗号化ツール v0.1 || Cryptography Web App v0.1
+-------------------------
+(C) 2025 [@asymmetry1]
+Built with React + Vite + CryptoJS + ADHD
+
+Welcome to the PC-98 Crypto Terminal!
+This program lets you encode and decode messages using classic and modern ciphers.
+Perfect for secret messages, retro vibes, or just messing around.
+
+Supported Methods:
+- Base64: Simple encoding for data
+- AES: Secure encryption (needs a key!)
+- Hex: Convert text to hexadecimal
+- SHA-256: One-way hash with optional salt
+- MD5: Common hash
+- AES-HEX: AES with clean output
+
+How to Use:
+1. Type your message in the input box.
+2. Pick a method from the dropdown.
+3. Hit "Encode" or "Decode".
+4. Check the result—or debug the errors!
+
+Tabs:
+- Media-Viewer.exe: See some cool visuals.
+- Notepad.exe: Jot down notes.
+
+Tip: Errors pop up like old-school alerts. Click OK to dismiss.
+
+Enjoy the retro crypto experience!
+Contact: @asymmetry1 | kuronamiku@gmail.com

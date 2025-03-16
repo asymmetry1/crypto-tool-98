@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  justify-content: center;
+  background-color: #AEC6CF;
+  color: #000000;
+}
+
+.App {
+  background-color: #AEC6CF; /* Light gray background, PC-98 style */
+  min-height: 100vh;
+  padding: 20px;
+  font-family: 'MS Gothic', monospace;
+  color: #000000;
+}
+
+.app-title {
+  text-align: center;
+  color: #000080; /* Dark blue, PC-98-ish */
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* PC-98 Window Styling */
+.window {
+  background-color: #D3D3D3; /* Light Gray BG */
+  border: 4px solid #808080; /* Thick Gray Border */
+  box-shadow: 4px 4px 0 #000080; /* Black shadow for 3D effect */
+  padding: 10px;
+  flex: 1;
+  color: #000000;
+}
+
+.window-title {
+  background-color: #000080; /* Dark blue title bar */
+  color: #FFFFFF; /* White text */
+  padding: 5px;
+  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  display: flex;
+  gap: 2px;
+}
+
+.window-tab {
+  cursor: pointer;
+  padding: 2px 8px;
+}
+
+.window-tab:hover {
+  background-color: #0000FF;
+}
+
+.window-tab:active {
+  background-color: #87ceeb;
+  color: #000080;
+}
+
+.pc98b-container {
+  margin-left: auto;
+}
+
+.form-window {
+  flex: 0 0 auto;
+  width: 400px;
+}
+
+.form-section {
+  padding: 10px;
+  color: #000000;
+}
+
+.form-section label {
+  color: #000000;
+}
+
+.image-window {
+  flex: 1;
+}
+
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.image-section img {
+  max-width: 75%;
+  height: auto;
+  image-rendering: pixelated;
+  border: 2px solid #000080; /* Thin border around images */
+}
+
+.notepad-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15;
+  padding: 10px;
+}
+
+.notepad-section textarea {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 504px;
+  min-height: 450px;
+  border: 2px solid #000080;
+  padding: 5px;
+  font-family: 'MS Gothic', monospace;
+  font-size: 14px;
+  resize: none;
+}
+
+/* Form Elements */
+textarea,
+select,
+input {
+  background-color: #FFFFFF;
+  border: 2px solid #000080;
+  padding: 5px;
+  font-family: 'MS Gothic', monospace;
+  font-size: 14px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 100%;
+  color: #000000;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+button {
+  background-color: #FFB6C1; /* Light pink for buttons */
+  border: 2px solid #000080;
+  color: #000080;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: 'MS Gothic', monospace;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #FF69B4; /* Hot pink on hover */
+}
+
+/* ERROR POPUP */
+.error-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.error-popup .window {
+  background-color: #87CEEB;
+  border: 4px solid #000080;
+  box-shadow: 4px 4px 0 #000000;
+  padding: 10px;
+  width: 300px; /* Fixed width for consistency */
+}
+
+.error-popup .window-title {
+  background-color: #000080;
+  color: #FFFFFF;
+  padding: 5px;
+  font-size: 16px;
+  border-bottom: 2px solid #FFFFFF;
+  text-align: center;
+}
+
+.error-popup p {
+  color: #000080;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.error-popup button {
+  display: block;
+  margin: 0 auto;
+  background-color: #FFB6C1;
+  border: 2px solid #000080;
+  color: #000080;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: 'MS Gothic', monospace;
+  font-size: 14px;
+}
+
+.error-popup button:hover {
+  background-color: #FF69B4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .window {
+    margin: 0 0 20px 0;
+  }
+}
+
+/* AES-Hex Output */
+.aes-hex-output {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aes-hex-output label {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.aes-hex-output textarea {
+  background-color: #FFFFFF;
+  border: 2px solid #000080;
+  padding: 5px;
+  font-family: 'MS Gothic', monospace;
+  font-size: 14px;
+  width: 100%;
+  max-width: 100%;
+  resize: none;
+}
+
