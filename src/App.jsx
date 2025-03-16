@@ -119,7 +119,7 @@ const isErrorMessage = (text) =>
 
 useEffect(() => {
     if (activeWindow === 'about.exe') {
-      fetch('src/assets/about.txt')
+      fetch('about.txt')
         .then((response) => response.text())
         .then((text) => setAboutContent(text))
         .catch(() => setAboutContent('Error loading about.txt'));
