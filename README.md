@@ -1,7 +1,7 @@
 # 暗号化ツール v0.1 || Cryptography Web App v0.1
 A retro PC-98 styled cryptography tool built with React + CryptoJS.
 
-## Setup
+## Offline Setup
 1. Clone: `git clone https://github.com/asymmetry1/crypto-tool-98.git`
 2. Install: `npm install`
 3. Run: `npm start`
